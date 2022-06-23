@@ -8,17 +8,18 @@ body{
     background-color: hsl(212, 45%, 89%);
     font-family: 'Outfit', sans-serif;
 }
-main{
+.container{
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+    display: flex;
 }
-.main-div{
+div{
     background-color: hsl(0, 0%, 100%);
     width: 20%;
     border-radius: 10px;
     text-align: center;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 img{
     width: 90%;
@@ -37,4 +38,9 @@ p{
     margin: auto;
     color: hsl(220, 15%, 55%);
     padding-bottom: 2.5em;
+}
+@media screen and (max-width:500px) {
+    div{
+        width: 90%;
+    }
 }
